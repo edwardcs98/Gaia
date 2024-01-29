@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Revista Tecnológica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Tipo de letra */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Color de letra principal */
+        }
+        .navbar {
+            background-color: #0077cc; /* Color de fondo de la barra de navegación */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff; /* Color de letra de los enlaces de la barra de navegación */
+            text-align: center;
+            padding: 14px 20px; /* Mayor espacio entre enlaces */
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #005599; /* Color de fondo al pasar el cursor por encima de los enlaces */
+        }
+        h1 {
+            font-size: 48px; /* Tamaño de fuente más grande */
+            text-align: center;
+            padding: 20px; /* Espaciado alrededor del título */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra en el título */
+            transition: color 0.5s; /* Transición de color en 0.5 segundos */
+            cursor: pointer;
+        }
+        h1:hover {
+            color: #0077cc; /* Cambia el color del título al pasar el cursor por encima */
+        }
+        p {
+            text-align: justify;
+            line-height: 1.5; /* Espacio entre líneas */
+        }
+        a {
+            color: #FF4500; /* Color de hipervínculo */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra en los artículos */
+        }
+        .read-more {
+            display: none; /* Oculta el contenido adicional por defecto */
+        }
+        .show-content {
+            display: block; /* Muestra el contenido adicional cuando se hace clic */
+        }
+        .article-title {
+            color: #0077cc; /* Color del título del artículo */
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Función para generar un fondo degradado dinámico
+        function generateDynamicGradient() {
+            const body = document.body;
+            const gradientColors = ['#ffffff', '#e6e6e6', '#f2f2f2']; // Colores del fondo
+            const gradientDirection = 'to right'; // Dirección del degradado
+            body.style.background = `linear-gradient(${gradientDirection}, ${gradientColors.join(', ')})`;
+        }
+
+        function toggleContent(articleId) {
+            var content = document.getElementById(articleId);
+            content.classList.toggle("show-content");
+        }
+
+        function changeTitleColor() {
+            var title = document.querySelector("h1");
+            title.style.color = "#005599"; // Cambia el color del título
+        }
+
+        function restoreTitleColor() {
+            var title = document.querySelector("h1");
+            title.style.color = "#0077cc"; // Restaura el color original del título
+        }
+
+        // Genera el fondo degradado al cargar la página
+        window.addEventListener('load', generateDynamicGradient);
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Reseñas</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <h1 onmouseover="changeTitleColor()" onmouseout="restoreTitleColor"><span style="color: #333;">The Geek Zone:</span> Tu Revista de Tecnología</h1>
+
+    <main>
+        <div class="article">
+            <h2 class="article-title" onclick="toggleContent('content1')">Artículo 1: Tendencias Tecnológicas</h2>
+            <p>Descubre las últimas tendencias en tecnología que están cambiando el mundo. Desde inteligencia artificial hasta realidad virtual, te mantenemos al día.</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content1')">Leer más</a>
+            <p id="content1" class="read-more">En este artículo, exploraremos las innovaciones más emocionantes en el mundo de la tecnología. 
+                Desde avances en la robótica hasta aplicaciones prácticas de la inteligencia artificial, estarás al tanto de lo que está por venir.</p>
+        </div>
+
+        <div class="article">
+            <h2 class="article-title" onclick="toggleContent('content2')">Reseña: Smartphone XYZ</h2>
+            <p>Analizamos en detalle el nuevo Smartphone XYZ. Rendimiento, cámara, diseño y más. ¿Vale la pena comprarlo?</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content2')">Leer más</a>
+            <p id="content2" class="read-more">En esta reseña exhaustiva, descubrirás si el Smartphone XYZ es la elección correcta para ti. 
+                Analizamos sus características, rendimiento y mucho más.</p>
+        </div>
+
+        <div class="article">
+            <h2 class="article-title" onclick="toggleContent('content3')">Guía de Compra: Laptops</h2>
+            <p>¿Necesitas una nueva laptop? Te ayudamos a elegir la mejor opción para tus necesidades. Comparamos modelos y características.</p>
+            <a href="javascript:void(0);" onclick="toggleContent('content3')">Leer más</a>
+            <p id="content3" class="read-more">En nuestra guía de compra, te ofrecemos consejos sobre cómo seleccionar la laptop adecuada para ti. 
+                Comparamos modelos populares y destacamos sus características clave.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Geek Zone: Tu Revista de Tecnología. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
