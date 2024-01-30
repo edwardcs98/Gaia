@@ -4,7 +4,7 @@
 ## Autor
 **Edward Camacho**
 
-* [LinkedIn](https://www.linkedin.com/in/focus-ed/)
+* [LinkedIn](https://www.linkedin.com/in/focus-edward/)
 
 
 ## Instalación
