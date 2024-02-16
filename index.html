@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" ceontent="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0¨>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="page_portfolio.css">
+    <title>Portafolio de Edward</title>
+</head>
+
+<body>
+    <!-- Home -->
+    <span class="sombra">
+        <section id="home" class="home">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>  Edward  Camacho</h1>
+
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#home">Inicio</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#servicios">Valores</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+                    <!-- Icono del menu -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/focus-edward/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/584129090326"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:edward27877@gmail.com"><i class="fa-brands fa-google"></i></a>
+                        <a href="https://github.com/focus-edward"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </header>
+
+                <div class="fila">
+                    <div class="col" id="fade">
+                        <h2>Desarrollador Fullstack</h2>
+                        <p>Soy un  desarrollador entusiasta cuya trayectoria se ha centrado en la creación de aplicaciones y sitios web utilizando una variedad de tecnologías. Mi viaje en el mundo del desarrollo comenzó con un profundo interés en resolver problemas complejos y mejorar la experiencia del usuario.
+                        </>
+                            <p>Creo firmemente que la tecnología representa la evolución del ser humano hacia un futuro más conectado, eficiente y consciente.</p>
+                        <button id="cv" class="btn btn-1">Descargar CV</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/foto-inicio.png" alt="" width="500" height="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="hab">
+                        <div class="box">
+                            <div class="chart chart1" data-percent="100">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <h2>Python</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hab">
+                        <div class="box">
+                            <div class="chart chart2" data-percent="100">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <h2>HTML/CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hab">
+                        <div class="box">
+                            <div class="chart chart3" data-percent="100">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+                            <h2>Qt</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="hab">
+                        <div class="box">
+                            <div class="chart chart4" data-percent="100">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hab">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart chart5" data-percent="100">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h2>MYSQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hab">
+                        <div class="box">
+                            <div class="chart chart6" data-percent="100">
+                                <h5>django</h5>
+                            </div>
+                            <h2>DJANGO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="servicios">
+        <h1>Valores esenciales</h1>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Calidad de codigo</h3>
+                    <p>La calidad del código es la base de la confiabilidad y la eficiencia en el desarrollo, reflejando nuestro compromiso con la excelencia y la durabilidad de nuestras creaciones digitales. Es la clave para un software robusto y escalable.</p>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>Creatividad</h3>
+                    <p>
+                        La creatividad transforma conceptos abstractos en soluciones tangibles y sorprendentes.
+                        Es la chispa que convierte líneas de código en experiencias intuitivas y cautivadoras, dando vida a la visión detrás de cada proyecto digital.
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i<i class="fa-solid fa-object-group"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño responsivo</h3>
+                    <p>
+                        La programación responsiva es una técnica de diseño y desarrollo web que asegura que los sitios web y aplicaciones se vean y funcionen de manera óptima en una variedad de dispositivos y tamaños de pantalla.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                    </div>
+                    <h3>Prueba y depuración</h3>
+                    <p>
+                        Es fundamental probar y depurar el código para garantizar su funcionamiento correcto y para identificar y corregir errores. Se transforman desafíos en oportunidades de mejora, impulsando la excelencia en el desarrollo de software.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                        </div>
+                    </div>
+                    <h3>Pensamiento modular y reutilizable</h3>
+                    <p>Los programas suelen ser complejos y requieren una cuidadosa organización y atención a los detalles para evitar errores y garantizar un código limpio y mantenible.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                    </div>
+                    <h3>Comunicación efectiva</h3>
+                    <p>En la programación es el lenguaje que une las mentes creativas, transformando ideas en soluciones tangibles y fortaleciendo el trabajo en equipo hacia la excelencia digital.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trabajos" id="trabajos">
+        <h1>Mis Trabajos</h1>
+
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="img/demo python.jpg" alt="">
+                <div class="info">
+                    <h3>Demo para impresoras fiscales The Factory HKA</h3>
+                    <span>Python</span><span>Qt</span>
+                    <a href="https://github.com/focus-edward/Demo-Venezuela-Python-5.0.3-TFHKA">Ver Trabajo</a>
+                    <a href="https://codeload.github.com/focus-edward/Demo-Venezuela-Python-5.0.3-TFHKA/zip/refs/heads/main">Descargar</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/sdk.jpg" alt="">
+                <div class="info">
+                    <h3>SDK Python para Impresoras Fiscales</h3>
+                    <span>Python</span>
+                    <a href="https://github.com/focus-edward/TFHKA-Venezuela-Python-SDK">Ver Trabajo</a>
+                    <a href="https://codeload.github.com/focus-edward/TFHKA-Venezuela-Python-SDK/zip/refs/heads/main">Descargar</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/pagina-eve.png" alt="">
+                <div class="info">
+                    <h3>Pagina de Agencia de Eventos</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="https://github.com/focus-edward/prime-eventos">Ver Trabajo</a>
+                    <a href="https://focus-edward.github.io/prime-eventos/">Ver pagina</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Correo:</h3>
+                        <p>edward27877@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+58 4129090326</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Venezuela</p>
+                    </div>
+                    <div class="info">
+                        <h3>Linkedin</h3>
+                        <p>https://www.linkedin.com/in/focus-edward/</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Creado por Dev. Edward Camacho - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+
+
+</body>
+
+
+
+</html>
