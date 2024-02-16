@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 
 
-//funci騨 que carga las animaciones de las habilidades
+//funci貌n que carga las animaciones de las habilidades
 function cargarAnimaciones() {
     $(function () {
         $('.chart1').easyPieChart({
@@ -80,7 +80,7 @@ function cargarAnimaciones() {
     })
 }
 
-//Funci髇 para filtrar las categor韆s de los trabajos
+//Funci贸n para filtrar las categor铆as de los trabajos
 function verCategoria(cat) {
     const items = document.getElementsByClassName("item");
     for (let i = 0; i < items.length; i++) {
@@ -101,7 +101,7 @@ function verCategoria(cat) {
     const itemSeleccionado = document.getElementById(cat);
     itemSeleccionado.className = "borde";
 }
-//Funci髇 que detecta cuando lanzar la animaci髇 de las habilidades
+//Funci贸n que detecta cuando lanzar la animaci贸n de las habilidades
 function efectoHabilidades() {
     var skills = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
@@ -118,12 +118,12 @@ function efectoHabilidades() {
     }
 }
 
-//detecto el scrolling para aplicar la animaci髇 de las habilidaes
+//detecto el scrolling para aplicar la animaci贸n de las habilidaes
 window.onscroll = function () {
     efectoHabilidades();
 }
 
-//funci髇 que muestra el menu responsive{
+//funci贸n que muestra el menu responsive{
 function responsiveMenu() {
     let x = document.getElementById("nav");
     if (x.className === "") {
@@ -144,7 +144,7 @@ function responsiveMenu() {
     }
 }
 
-//Este codigo es para agregar una funci髇 a cada links del menu
+//Este codigo es para agregar una funci贸n a cada links del menu
 //responsive
 //cuando se presione en cualquier de los links del menu debe desaparecer el menu
 const links = document.querySelectorAll("#nav a");
@@ -160,6 +160,6 @@ for (i = 0; i < links.length; i++) {
 }
 
 document.getElementById("cv").addEventListener("click", function () {
-    window.location.href = "https://docs.google.com/document/d/19bCCzB_oZyL9PS7oUi71FXnnyKaWoS8X/edit?usp=drive_link&ouid=112606877807427390011&rtpof=true&sd=true";
+    window.location.href = "https://drive.google.com/file/d/1SqBg0zElA1sIcDi-CPXzpO36kXptE4NS/view?usp=drive_link";
 });
 
